@@ -1,8 +1,64 @@
+public class Main {
+    public static void main(String[] args) {
+        int a = 20;
+        int b = 10;
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+        System.out.println("Java Basic Calculator");
+        System.out.println("---------------------");
 
-</project>
+        int sum = add(a, b);
+        int difference = subtract(a, b);
+        int product = multiply(a, b);
+        int quotient = divide(a, b);
+        int remainder = modulus(a, b);
+
+        System.out.println("First Number: " + a);
+        System.out.println("Second Number: " + b);
+
+        System.out.println("Addition: " + sum);
+        System.out.println("Subtraction: " + difference);
+        System.out.println("Multiplication: " + product);
+        System.out.println("Division: " + quotient);
+        System.out.println("Remainder: " + remainder);
+
+        checkEvenOdd(a);
+        checkEvenOdd(b);
+
+        printMessage();
+    }
+
+    static int add(int x, int y) {
+        return x + y;
+    }
+
+    static int subtract(int x, int y) {
+        return x - y;
+    }
+
+    static int multiply(int x, int y) {
+        return x * y;
+    }
+
+    static int divide(int x, int y) {
+        if (y == 0) {
+            return 0;
+        }
+        return x / y;
+    }
+
+    static int modulus(int x, int y) {
+        return x % y;
+    }
+
+    static void checkEvenOdd(int number) {
+        if (number % 2 == 0) {
+            System.out.println(number + " is Even");
+        } else {
+            System.out.println(number + " is Odd");
+        }
+    }
+
+    static void printMessage() {
+        System.out.println("Program executed successfully!");
+    }
+}
