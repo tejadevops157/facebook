@@ -3,9 +3,8 @@ public class Main {
         int a = 20;
         int b = 10;
 
-        System.out.println("Java Basic Calculator");
-        System.out.println("---------------------");
 
+       
         int sum = add(a, b);
         int difference = subtract(a, b);
         int product = multiply(a, b);
