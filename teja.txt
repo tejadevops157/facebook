@@ -1,6 +1,5 @@
 
-        int sum = add(a, b);
-        int difference = subtract(a, b);
+      
         int product = multiply(a, b);
         int quotient = divide(a, b);
         int remainder = modulus(a, b);
