@@ -2,14 +2,9 @@
 
 
        
-        int sum = add(a, b);
-        int difference = subtract(a, b);
-        int product = multiply(a, b);
-        int quotient = divide(a, b);
-        int remainder = modulus(a, b);
+       
 
-        System.out.println("First Number: " + a);
-        System.out.println("Second Number: " + b);
+        
 
         System.out.println("Addition: " + sum);
         System.out.println("Subtraction: " + difference);
